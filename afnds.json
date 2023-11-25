@@ -1,0 +1,34 @@
+[
+    {
+        "estados": ["S", "A", "B"],
+        "alfabeto": ["a", "b"],
+        "estado_inicial": "S",
+        "estados_finais": ["B"],
+        "transicoes": {
+            "S": { "a": ["S", "A"], "b": ["S"]},
+            "A": { "b": ["B"]},
+            "B": { "a": ["B"], "b": ["B"]}
+        } 
+    },
+    {
+        "estados": ["S", "A"],
+        "alfabeto": ["a", "b"],
+        "estado_inicial": "S",
+        "estados_finais": ["A"],
+        "transicoes": {
+            "S": { "a": ["A"]},
+            "A": { "a": ["A"], "b": ["A"]}
+        } 
+    },
+    {
+        "estados": ["S", "A", "B"],
+        "alfabeto": ["a", "b"],
+        "estado_inicial": "S",
+        "estados_finais": ["A"],
+        "transicoes": {
+            "S": { "a": ["A"]},
+            "A": { "e": ["B"], "a": ["B"]},
+            "B": { "a": ["A"]}
+        } 
+    }
+]
